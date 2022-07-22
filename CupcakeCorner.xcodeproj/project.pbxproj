@@ -12,6 +12,7 @@
 		18AE0D342889FD95000D624B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE0D332889FD95000D624B /* Assets.xcassets */; };
 		18AE0D372889FD95000D624B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE0D362889FD95000D624B /* Preview Assets.xcassets */; };
 		18AE0D41288AF0DE000D624B /* CodableForPublished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0D40288AF0DE000D624B /* CodableForPublished.swift */; };
+		18AE0D43288AF312000D624B /* URLSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0D42288AF312000D624B /* URLSessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		18AE0D332889FD95000D624B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AE0D362889FD95000D624B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18AE0D40288AF0DE000D624B /* CodableForPublished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableForPublished.swift; sourceTree = "<group>"; };
+		18AE0D42288AF312000D624B /* URLSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				18AE0D40288AF0DE000D624B /* CodableForPublished.swift */,
+				18AE0D42288AF312000D624B /* URLSessionView.swift */,
 			);
 			path = exercises;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AE0D322889FD92000D624B /* ContentView.swift in Sources */,
+				18AE0D43288AF312000D624B /* URLSessionView.swift in Sources */,
 				18AE0D41288AF0DE000D624B /* CodableForPublished.swift in Sources */,
 				18AE0D302889FD92000D624B /* CupcakeCornerApp.swift in Sources */,
 			);
