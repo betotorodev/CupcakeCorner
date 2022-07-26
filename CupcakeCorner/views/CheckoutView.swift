@@ -12,6 +12,7 @@ struct CheckoutView: View {
   @ObservedObject var order: Order
   @State private var confirmationMessage = ""
   @State private var showingConfirmation = false
+  @State private var showingError = false
   
   func placeOrder() async {
     guard let encoded = try? JSONEncoder().encode(order) else {
@@ -31,6 +32,7 @@ struct CheckoutView: View {
       showingConfirmation = true
     } catch {
       print("Checkout failed.")
+      showingError = true
     }
   }
   
@@ -63,6 +65,11 @@ struct CheckoutView: View {
       Button("OK") { }
     } message: {
       Text(confirmationMessage)
+    }
+    .alert("Error", isPresented: $showingError) {
+      Button("OK") {}
+    } message: {
+      Text("an error has occur with the data base conection")
     }
     
   }
