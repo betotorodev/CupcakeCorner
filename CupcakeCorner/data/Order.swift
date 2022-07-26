@@ -38,11 +38,7 @@ class Order: ObservableObject {
 //  @Published var zip = ""
   
   var hasValidAddress: Bool {
-    if orderItem.name.isEmpty || orderItem.streetAddress.isEmpty || orderItem.city.isEmpty || orderItem.zip.isEmpty {
-      return false
-    }
-    
-    if orderItem.name != orderItem.name.trimmingCharacters(in: .whitespacesAndNewlines) || orderItem.streetAddress != orderItem.streetAddress.trimmingCharacters(in: .whitespacesAndNewlines) || orderItem.city != orderItem.city.trimmingCharacters(in: .whitespacesAndNewlines) || orderItem.zip != orderItem.zip.trimmingCharacters(in: .whitespacesAndNewlines) {
+    if orderItem.name.isReallyEmpty || orderItem.streetAddress.isReallyEmpty || orderItem.city.isReallyEmpty || orderItem.zip.isReallyEmpty {
       return false
     }
     

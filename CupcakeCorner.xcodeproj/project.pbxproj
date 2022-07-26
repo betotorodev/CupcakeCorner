@@ -19,6 +19,7 @@
 		18AE0D4D288EEE3E000D624B /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0D4C288EEE3E000D624B /* AddressView.swift */; };
 		18AE0D4F288EF093000D624B /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0D4E288EF093000D624B /* CheckoutView.swift */; };
 		18EE9FDC289041BF00294628 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FDB289041BF00294628 /* OrderItem.swift */; };
+		18EE9FDF28904C9A00294628 /* String-EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FDE28904C9A00294628 /* String-EmptyChecking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		18AE0D4C288EEE3E000D624B /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		18AE0D4E288EF093000D624B /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		18EE9FDB289041BF00294628 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		18EE9FDE28904C9A00294628 /* String-EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-EmptyChecking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		18AE0D2E2889FD92000D624B /* CupcakeCorner */ = {
 			isa = PBXGroup;
 			children = (
+				18EE9FDD28904C7A00294628 /* utils */,
 				18AE0D4B288EEE19000D624B /* views */,
 				18AE0D48288EEAF1000D624B /* data */,
 				18AE0D3D288AF0A2000D624B /* exercises */,
@@ -113,6 +116,14 @@
 				18AE0D4E288EF093000D624B /* CheckoutView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		18EE9FDD28904C7A00294628 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				18EE9FDE28904C9A00294628 /* String-EmptyChecking.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE9FDF28904C9A00294628 /* String-EmptyChecking.swift in Sources */,
 				18AE0D322889FD92000D624B /* ContentView.swift in Sources */,
 				18AE0D43288AF312000D624B /* URLSessionView.swift in Sources */,
 				18AE0D41288AF0DE000D624B /* CodableForPublished.swift in Sources */,
