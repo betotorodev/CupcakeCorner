@@ -16,7 +16,7 @@ struct CheckoutView: View {
   @State private var errorMessage = ""
   
   func placeOrder() async {
-    guard let encoded = try? JSONEncoder().encode(order.orderItem) else {
+    guard let encoded = try? JSONEncoder().encode(order.data) else {
       print("Failed to encode order")
       return
     }
