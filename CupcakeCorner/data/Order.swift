@@ -40,6 +40,10 @@ class Order: ObservableObject, Codable {
       return false
     }
     
+    if name != name.trimmingCharacters(in: .whitespacesAndNewlines) || streetAddress != streetAddress.trimmingCharacters(in: .whitespacesAndNewlines) || city != city.trimmingCharacters(in: .whitespacesAndNewlines) || zip != zip.trimmingCharacters(in: .whitespacesAndNewlines) {
+      return false
+    }
+    
     return true
   }
   
